@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>Javascript Form Validation and getting Form Data.</h1>
+    </header>
 
-    <form method="get" action="data.js">
+    <form id="form" method="post" action="index.html">
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname"><br>
         <label for="lname">Last name:</label><br>
-        <input type="text"  ><br>
+        <input type="text" id="lname" name="lname"><br>
         <label for="age">Age:</label><br>
         <input type="number" id="age" name="age"><br>
         <label for="password">Password:</label><br>
@@ -21,6 +25,7 @@
         <input type="text" id="confirmPassword" name="confirmPassword"><br>
         <button type="submit">Submit</button>
     </form>
+    <p id="log"></p>
     <script src="./js/script.js"></script>
 </body>
 </html>
